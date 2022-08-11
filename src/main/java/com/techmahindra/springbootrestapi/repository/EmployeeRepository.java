@@ -19,7 +19,7 @@ public interface EmployeeRepository extends PagingAndSortingRepository<Employee,
 
 	List<Employee> findByName(String name);
 
-	// SELECT 8 FROM table WHERE name="Haridas" AND location="India"
+	// SELECT * FROM table WHERE name="Haridas" AND location="India"
 	List<Employee> findByNameAndLocation(String name, String location);
 
 	// SELECT * FROM table WHERE name LIKE "%Har%"
